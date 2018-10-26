@@ -129,13 +129,14 @@ footer {
   display: none;
   position: absolute;
   top: 25px;
+  z-index: 1;
   left: 0;
   padding: 0 1px 1px 1px;
   background-color: #5b5b5b;
   flex-wrap: nowrap;
   flex-direction: column;
 }
-/* line 109, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .header__nav-bar__drop__collapse a {
   position: relative;
   white-space: nowrap;
@@ -151,7 +152,7 @@ footer {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 124, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .header__nav-bar__drop__collapse a:hover:before {
   content: "";
   position: absolute;
@@ -161,7 +162,7 @@ footer {
   width: 3px;
   background-color: #d53a35;
 }
-/* line 133, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .header__nav-bar__drop__collapse a:hover:after {
   content: "";
   position: absolute;
@@ -173,7 +174,7 @@ footer {
   transform: rotate(45deg);
 }
 
-/* line 149, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .finder {
   height: 980px;
   display: flex;
@@ -184,11 +185,11 @@ footer {
   align-items: center;
   margin-bottom: 75px;
 }
-/* line 158, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .finder h1 {
   margin-bottom: 56px;
 }
-/* line 160, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .finder h1 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 100px;
@@ -201,16 +202,16 @@ footer {
   vertical-align: middle;
   text-shadow: 0 3px 45px white;
 }
-/* line 171, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .finder h1 p:first-of-type {
   color: #8ec723;
 }
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .finder__form {
   display: flex;
   align-items: flex-start;
 }
-/* line 179, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .finder__form__select {
   position: relative;
   margin-right: 15px;
@@ -223,7 +224,7 @@ footer {
   width: 420px;
   cursor: pointer;
 }
-/* line 190, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .finder__form__select i {
   position: absolute;
   right: 15px;
@@ -232,7 +233,7 @@ footer {
   font-size: 22px;
   color: #373542;
 }
-/* line 198, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .finder__form__select > p {
   width: 100%;
   height: 100%;
@@ -240,17 +241,17 @@ footer {
   padding: 0 20px;
   line-height: 65px;
 }
-/* line 205, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .finder__form__select input {
   display: none;
 }
-/* line 207, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .finder__form__select input:checked ~ div {
   height: auto;
   border: solid 1px #5b5b5b;
   padding: 0;
 }
-/* line 213, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .finder__form__select div {
   width: 420px;
   left: -1px;
@@ -259,9 +260,10 @@ footer {
   background-color: white;
   border: solid 0px #5b5b5b;
   height: 0;
+  z-index: 1;
   overflow: hidden;
 }
-/* line 222, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .finder__form__select div p {
   position: relative;
   cursor: pointer;
@@ -271,7 +273,7 @@ footer {
   border-top: 1px solid #5b5b5b;
   border-bottom: 1px solid #5b5b5b;
 }
-/* line 231, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .finder__form__select div p:hover:before {
   content: "";
   position: absolute;
@@ -282,7 +284,7 @@ footer {
   transform: translateY(-50%);
   background-color: #d53a35;
 }
-/* line 241, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .finder__form__select div p:hover:after {
   content: "";
   position: absolute;
@@ -293,7 +295,7 @@ footer {
   transform: translateY(-50%) rotate(45deg);
   background-color: #d53a35;
 }
-/* line 255, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .finder__form__calendar {
   height: 70px;
   border: solid 1px #5b5b5b;
@@ -307,7 +309,7 @@ footer {
   background: url("../img/calendar.png") no-repeat right 15px center;
   background-color: white;
 }
-/* line 267, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 .finder__form__calendar input {
   background-color: transparent;
   border: none;
@@ -317,7 +319,7 @@ footer {
   width: calc(100% - 60px);
   padding: 0 0 0 20px;
 }
-/* line 277, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .finder__form__submit {
   height: 70px;
   width: 250px;
@@ -329,18 +331,18 @@ footer {
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
 }
-/* line 287, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .finder__form__submit:hover {
   color: #d53a35;
   border-right: 5px solid #d53a35;
 }
 
-/* line 295, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .parking__head {
   position: relative;
   margin-bottom: 50px;
 }
-/* line 298, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .parking__head:before {
   content: "";
   position: absolute;
@@ -350,7 +352,7 @@ footer {
   bottom: 4px;
   width: 170px;
 }
-/* line 307, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 .parking__head:after {
   position: absolute;
   content: "";
@@ -360,7 +362,7 @@ footer {
   bottom: 0;
   width: 70px;
 }
-/* line 316, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .parking__head h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 36px;
@@ -368,7 +370,7 @@ footer {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
-/* line 323, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .parking__head p {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -377,19 +379,19 @@ footer {
   margin-bottom: 15px;
   padding-left: 3px;
 }
-/* line 332, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .parking__card {
   position: relative;
   background-color: #f7f7f7;
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
-/* line 337, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .parking__card__text {
   overflow: hidden;
   max-height: 148px;
 }
-/* line 341, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .parking__card a {
   display: block;
   width: 100%;
@@ -401,11 +403,11 @@ footer {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 351, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .parking__card a:hover {
   text-decoration: none;
 }
-/* line 354, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .parking__card a:before {
   content: "";
   position: absolute;
@@ -415,7 +417,7 @@ footer {
   left: 20px;
   bottom: 0;
 }
-/* line 364, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .parking__card p {
   width: 100%;
   padding: 10px 20px;
@@ -424,7 +426,7 @@ footer {
   font-size: 14px;
   margin-bottom: 0;
 }
-/* line 372, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 .parking__card__sticker {
   cursor: pointer;
   position: absolute;
@@ -437,11 +439,11 @@ footer {
   justify-content: center;
   padding-top: 25px;
 }
-/* line 375, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .parking__card__sticker:hover ~ .parking__card__img img {
   opacity: 0.6;
 }
-/* line 388, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .parking__card__sticker__red {
   position: relative;
   height: 21px;
@@ -451,26 +453,26 @@ footer {
   display: inline-block;
   margin: 0 -4px;
 }
-/* line 389, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .parking__card__sticker__red:nth-child(2) {
   top: -5px;
 }
-/* line 399, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 .parking__card__sticker__red.first {
   background-color: #ad302c;
 }
-/* line 402, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .parking__card__sticker__red.second {
   background-color: #d53a35;
 }
-/* line 405, ../sass/style.scss */
+/* line 407, ../sass/style.scss */
 .parking__card__sticker__red p {
   color: white;
   transform: skewX(-25deg);
   padding: 0;
   text-align: center;
 }
-/* line 413, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 .parking__card__img {
   overflow: hidden;
   width: 100%;
@@ -479,7 +481,7 @@ footer {
   background-color: black;
   border: 1px solid #999999;
 }
-/* line 420, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .parking__card__img img {
   height: 100%;
   position: absolute;
@@ -488,18 +490,18 @@ footer {
   transform: translateX(-50%);
 }
 
-/* line 430, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .about {
   margin-bottom: 75px;
 }
-/* line 432, ../sass/style.scss */
+/* line 434, ../sass/style.scss */
 .about h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 28px;
   color: #373542;
   margin-bottom: 15px;
 }
-/* line 438, ../sass/style.scss */
+/* line 440, ../sass/style.scss */
 .about p {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -507,23 +509,23 @@ footer {
   margin: 0;
 }
 
-/* line 446, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 .footer__head {
   padding: 80px 0;
 }
-/* line 448, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .footer__head__point {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 452, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 .footer__head__point ico {
   height: 52px;
   width: 52px;
   position: relative;
 }
-/* line 456, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 .footer__head__point ico img {
   height: 100%;
   position: absolute;
@@ -531,7 +533,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 464, ../sass/style.scss */
+/* line 466, ../sass/style.scss */
 .footer__head__point h3 {
   text-align: center;
   position: relative;
@@ -543,7 +545,7 @@ footer {
   padding-bottom: 21px;
   text-transform: uppercase;
 }
-/* line 474, ../sass/style.scss */
+/* line 476, ../sass/style.scss */
 .footer__head__point h3:before {
   content: "";
   position: absolute;
@@ -554,7 +556,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 485, ../sass/style.scss */
+/* line 487, ../sass/style.scss */
 .footer__head__point p {
   margin: 20px 0 0 0;
   text-transform: uppercase;
@@ -563,21 +565,21 @@ footer {
   font-size: 14px;
   color: white;
 }
-/* line 495, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 .footer__call-back {
   padding: 80px 0;
   display: flex;
   justify-content: space-between;
 }
-/* line 500, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .footer__call-back__bg {
   background-color: #3d3d3d;
 }
-/* line 503, ../sass/style.scss */
+/* line 505, ../sass/style.scss */
 .footer__call-back__contacts {
   position: relative;
 }
-/* line 505, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 .footer__call-back__contacts:before {
   content: "";
   height: 175px;
@@ -588,17 +590,17 @@ footer {
   right: -5px;
   transform: translateY(-50%);
 }
-/* line 515, ../sass/style.scss */
+/* line 517, ../sass/style.scss */
 .footer__call-back__contacts__head {
   margin: 0 -15 0 0px;
 }
-/* line 517, ../sass/style.scss */
+/* line 519, ../sass/style.scss */
 .footer__call-back__contacts__head i {
   font-size: 52px;
   color: white;
   margin-right: 10px;
 }
-/* line 522, ../sass/style.scss */
+/* line 524, ../sass/style.scss */
 .footer__call-back__contacts__head h2 {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -608,13 +610,13 @@ footer {
   display: inline-block;
   vertical-align: top;
 }
-/* line 532, ../sass/style.scss */
+/* line 534, ../sass/style.scss */
 .footer__call-back__contacts p {
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 14px;
 }
-/* line 537, ../sass/style.scss */
+/* line 539, ../sass/style.scss */
 .footer__call-back__contacts a {
   display: block;
   position: relative;
@@ -624,16 +626,16 @@ footer {
   padding-left: 30px;
   margin-bottom: 15px;
 }
-/* line 545, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 .footer__call-back__contacts a:hover {
   text-decoration: none;
   color: #d53a35;
 }
-/* line 548, ../sass/style.scss */
+/* line 550, ../sass/style.scss */
 .footer__call-back__contacts a:hover i {
   color: #d53a35;
 }
-/* line 552, ../sass/style.scss */
+/* line 554, ../sass/style.scss */
 .footer__call-back__contacts a i {
   position: absolute;
   font-size: 14px;
@@ -641,12 +643,12 @@ footer {
   top: 4px;
   left: 0;
 }
-/* line 561, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 .footer__call-back__info {
   left: 20px;
   position: relative;
 }
-/* line 564, ../sass/style.scss */
+/* line 566, ../sass/style.scss */
 .footer__call-back__info:before {
   content: "";
   height: 175px;
@@ -657,7 +659,7 @@ footer {
   right: 30px;
   transform: translateY(-50%);
 }
-/* line 574, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 .footer__call-back__info h2 {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -666,7 +668,7 @@ footer {
   position: relative;
   text-transform: uppercase;
 }
-/* line 581, ../sass/style.scss */
+/* line 583, ../sass/style.scss */
 .footer__call-back__info h2:before {
   content: "";
   position: absolute;
@@ -676,17 +678,17 @@ footer {
   bottom: 0;
   left: 0;
 }
-/* line 591, ../sass/style.scss */
+/* line 593, ../sass/style.scss */
 .footer__call-back__info ul {
   list-style-type: none;
   padding: 0;
   margin-top: 15px;
 }
-/* line 595, ../sass/style.scss */
+/* line 597, ../sass/style.scss */
 .footer__call-back__info ul li {
   margin-bottom: 20px;
 }
-/* line 597, ../sass/style.scss */
+/* line 599, ../sass/style.scss */
 .footer__call-back__info ul li a {
   position: relative;
   margin: 0;
@@ -695,16 +697,16 @@ footer {
   color: white;
   font-size: 14px;
 }
-/* line 604, ../sass/style.scss */
+/* line 606, ../sass/style.scss */
 .footer__call-back__info ul li a:hover {
   color: #d53a35;
   text-decoration: none;
 }
-/* line 607, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .footer__call-back__info ul li a:hover i {
   color: #d53a35;
 }
-/* line 611, ../sass/style.scss */
+/* line 613, ../sass/style.scss */
 .footer__call-back__info ul li a i {
   position: absolute;
   left: 0;
@@ -712,7 +714,7 @@ footer {
   font-size: 14px;
   color: white;
 }
-/* line 623, ../sass/style.scss */
+/* line 625, ../sass/style.scss */
 .footer__call-back__form h2 {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -721,7 +723,7 @@ footer {
   position: relative;
   text-transform: uppercase;
 }
-/* line 630, ../sass/style.scss */
+/* line 632, ../sass/style.scss */
 .footer__call-back__form h2:before {
   content: "";
   position: absolute;
@@ -731,13 +733,13 @@ footer {
   bottom: 0;
   left: 0;
 }
-/* line 640, ../sass/style.scss */
+/* line 642, ../sass/style.scss */
 .footer__call-back__form p {
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 14px;
 }
-/* line 645, ../sass/style.scss */
+/* line 647, ../sass/style.scss */
 .footer__call-back__form__wrapp {
   height: 48px;
   border: solid 1px #999999;
@@ -746,7 +748,7 @@ footer {
   margin-bottom: 10px;
   background-color: white;
 }
-/* line 652, ../sass/style.scss */
+/* line 654, ../sass/style.scss */
 .footer__call-back__form__wrapp input {
   border: none;
   background-color: transparent;
@@ -757,11 +759,11 @@ footer {
   color: #373542;
   font-size: 14px;
 }
-/* line 661, ../sass/style.scss */
+/* line 663, ../sass/style.scss */
 .footer__call-back__form__wrapp input:focus {
   outline: none;
 }
-/* line 665, ../sass/style.scss */
+/* line 667, ../sass/style.scss */
 .footer__call-back__form__wrapp button {
   position: absolute;
   width: 46px;
@@ -772,12 +774,12 @@ footer {
   border: none;
   cursor: pointer;
 }
-/* line 674, ../sass/style.scss */
+/* line 676, ../sass/style.scss */
 .footer__call-back__form__wrapp button:focus {
   outline: none;
   border: none;
 }
-/* line 678, ../sass/style.scss */
+/* line 680, ../sass/style.scss */
 .footer__call-back__form__wrapp button i {
   font-size: 14px;
   line-height: 46px;
@@ -786,11 +788,11 @@ footer {
   text-align: center;
   color: #999999;
 }
-/* line 690, ../sass/style.scss */
+/* line 692, ../sass/style.scss */
 .footer__copyright {
   height: 50px;
 }
-/* line 692, ../sass/style.scss */
+/* line 694, ../sass/style.scss */
 .footer__copyright p {
   margin: 0;
   line-height: 50px;
