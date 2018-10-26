@@ -7,4 +7,153 @@ body{
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+.header{
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  &__logo{
+    margin-left: 35px;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+    img{
+      height: 62px;
+      width: 62px;
+    }
+    p{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: $c-d-grey;
+      display: inline-block;
+      font-weight: bold;
+      margin: 0;
+      vertical-align: middle;
+      &:first-of-type{
+        color: $c-green;
+        margin: 0 -4px 0 4px;
+      }
+    }
+  }
+  &__nav-bar{
+    float: right;
+    margin-right: 30px;
+    height: 22px;
+    &__link{
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: $c-text;
+      text-decoration: none;
+      position: relative;
+      margin-right: 12px;
+      margin-left: 8px;
+      &-green{
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: $c-green;
+        text-decoration: none;
+        position: relative;
+        margin-left: 8px;
+        &:hover{
+          text-decoration: none;
+          color: $c-text-r;
+        }
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 12px;
+        top: 2px;
+        right: -12px;
+        background-color: $c-text;
+      }
+      &:hover{
+        text-decoration: none;
+        color: $c-text-r;
+      }
+    }
+    &__drop{
+      position: relative;
+      display: inline-block;
+      input{
+        display: none;
+      }
+      label{
+        cursor: pointer;
+        i{
+          font-size: 16px;
+          color: $c-text;
+        }
+      }
+      input:checked ~ .header__nav-bar__drop__collapse{
+        display: flex;
+      }
+      &__collapse{
+        display: none;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        padding: 0 1px 1px 1px;
+        background-color: $c-d-grey;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        a{
+          position: relative;
+          white-space: nowrap;
+          height: 48px;
+          padding: 0 25px;
+          display: block;
+          margin-top: 1px;
+          background-color: white;
+          line-height: 48px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          color: $c-text;
+          text-transform: uppercase;
+          cursor: pointer;
+          &:hover{
+            &:before{
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 3px;
+              background-color: $c-text-r;
+            }
+            &:after{
+              content: "";
+              position: absolute;
+              top: calc(50% - 2px);
+              left: 1px;
+              height: 4px;
+              width: 4px;
+              background-color: $c-text-r;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.finder{
+  height: 980px;
+  display: flex;
+  background: url("../img/finder.png")no-repeat;
+  background-size: 100% auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    p{
+      display: inline-block;
+    }
+  }
+}
 @import "media";
