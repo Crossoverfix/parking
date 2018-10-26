@@ -34,6 +34,7 @@ footer{
       font-weight: bold;
       margin: 0;
       vertical-align: middle;
+      letter-spacing: 0.8px;
       &:first-of-type{
         color: $c-green;
         margin: 0 -4px 0 4px;
@@ -149,7 +150,7 @@ footer{
   height: 980px;
   display: flex;
   background: url("../img/finder.png")no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -206,7 +207,7 @@ footer{
         &:checked ~ div{
           height: auto;
           border: solid 1px $c-d-grey;
-          padding:0 20px ;
+          padding:0;
         }
       }
       div{
@@ -222,15 +223,17 @@ footer{
           position: relative;
           cursor: pointer;
           line-height: 40px;
-          padding: 10px 0;
-          margin: 0;
+          padding: 10px 20px;
+          margin: -1px 0 0 0;
+          border-top: 1px solid $c-d-grey;
+          border-bottom: 1px solid $c-d-grey;
           &:hover{
             &:before{
               content: "";
               position: absolute;
               width: 4px;
               height: 60px;
-              left: -20px;
+              left: 0;
               top: 50%;
               transform: translateY(-50%);
               background-color: $c-text-r;
@@ -240,7 +243,7 @@ footer{
               position: absolute;
               width: 7px;
               height: 7px;
-              left: -20px;
+              left: 0;
               top: 50%;
               transform: translateY(-50%) rotate(45deg);
               background-color: $c-text-r;
@@ -333,9 +336,10 @@ footer{
     padding-bottom: 20px;
     &__text{
       overflow: hidden;
-      max-height: 143px;
+      max-height: 148px;
     }
-    h3{
+    a{
+      display: block;
       width: 100%;
       padding: 20px 20px 10px 20px;
       position: relative;
@@ -344,6 +348,9 @@ footer{
       font-size: 18px;
       margin: 0;
       text-transform: uppercase;
+      &:hover{
+        text-decoration: none;
+      }
       &:before{
         content: "";
         position: absolute;
